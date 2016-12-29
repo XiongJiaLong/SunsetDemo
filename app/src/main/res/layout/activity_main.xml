@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/primary"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.sunsetdemo.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:fitsSystemWindows="true"
+        android:id="@+id/mToolBar"
+        android:title="@string/app_name"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+
+    <com.example.administrator.sunsetdemo.PullToZoomListView
+        android:background="#ffffff"
+        android:scrollbars="none"
+        android:divider="#ffffff"
+        android:dividerHeight="5dp"
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.administrator.sunsetdemo.PullToZoomListView>
+</LinearLayout>
